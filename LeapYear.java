@@ -9,15 +9,23 @@
 import java.util.Scanner;
 
 class LeapYear {
-    
-  public static void main(String[] args) {
-      
-      Scanner myScanner = new Scanner(System.in);
-      
-      System.out.println("Enter year!");
-      String year_to_check = myScanner.nextInt();
-      
-      System.out.println();
-  }
 
-}
+  public static void main(String[] args) {
+      Scanner myScanner = new Scanner(System.in);
+      System.out.println("Enter year!");
+      
+      int year = myScanner.nextInt();
+      
+      if (year%4==0 && year%100!=0 && year%400!=0) {
+          System.out.println("Is leap");}
+    
+        else if (year%4==0 && year%100== 0 && year%400 !=0){
+            System.out.println("No leap only century");}
+        
+        else if (year%4==0 && year%100==0 && year%400==0){
+            System.out.println("Leap and century");}
+            
+        else {System.out.println("Not leap.");}
+            
+    }
+  }
