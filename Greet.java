@@ -14,7 +14,7 @@ class Greet {
       System.out.println("Enter surname!");
       String userSurname = myScanner.nextLine();
 
-      System.out.println("Hi " + userName.concat(userSurname) + ", it is a pleasure to meet you!");
+      System.out.println("Hi " + userName + " " + userSurname + ", it is a pleasure to meet you!");  
   }
 
 }
