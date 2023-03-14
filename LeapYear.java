@@ -4,3 +4,20 @@
    
    Remember that a year is leap if it is a multiple of 4 and not a multiple of
    100, or if it is a multiple of 400. */
+
+
+import java.util.Scanner;
+
+class LeapYear {
+    
+  public static void main(String[] args) {
+      
+      Scanner myScanner = new Scanner(System.in);
+      
+      System.out.println("Enter year!");
+      String year_to_check = myScanner.nextInt();
+      
+      System.out.println();
+  }
+
+}
