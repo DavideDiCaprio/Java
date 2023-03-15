@@ -21,16 +21,16 @@ class TemperatureConverter {
     
     if (userTemperature=="F"){
         System.out.println("Enter Fahreneit temperature...");
-        float Fahreneith_temperature = myScanner.nextFloat();
+        float Fahreneith = myScanner.nextFloat();
 
-        float Celsius = ((Fahreneith_temperature-32)*5)/9;
+        float Celsius = ((Fahreneith-32)*5)/9;
         System.out.println("Your temperature is" + Celsius +  "celsius."); 
     }
     
     else if (userTemperature=="C"){
         System.out.println("Enter Celsius temperature...");
-        float Celsius_temperature = myScanner.nextFloat();
-        float Fahreneit = ;
+        float Celsius = myScanner.nextFloat();
+        float Fahreneit = ((Celsius*9)/5)+32;
         System.out.println("Your temperature is" + Fahreneit +  "fahreneit.");
     }
     
