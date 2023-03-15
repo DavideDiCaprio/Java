@@ -17,17 +17,24 @@ class TemperatureConverter {
         
     Scanner myScanner = new Scanner(System.in);
     System.out.println("Enter F/C. (F is for Fahreneit, C is for Celsius.) ");
-    
     String userTemperature = myScanner.nextLine();
     
     if (userTemperature=="F"){
-        System.out.println("Enter Fahreneit temperature.")
-        
-        int Fahreneith_temperature = myScaner.nextint();
-        
-        
+        System.out.println("Enter Fahreneit temperature...");
+        float Fahreneith_temperature = myScanner.nextFloat();
+
+        float Celsius = ((Fahreneith_temperature-32)*5)/9;
+        System.out.println("Your temperature is" + Celsius +  "celsius."); 
     }
     
+    else if (userTemperature=="C"){
+        System.out.println("Enter Celsius temperature...");
+        float Celsius_temperature = myScanner.nextFloat();
+        float Fahreneit = ;
+        System.out.println("Your temperature is" + Fahreneit +  "fahreneit.");
+    }
     
-    System.out.println("");
+    else {System.out.println("Uncorrect input.");}
     
+    }
+}
