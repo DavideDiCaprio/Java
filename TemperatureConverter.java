@@ -8,3 +8,26 @@
       with the converted temperature and the appropriate unit.
 
    *Note*: you can find online formulas to perform the conversions C <-> F. */
+
+
+import java.util.Scanner;
+
+class TemperatureConverter {
+    public static void main(String[] args) {
+        
+    Scanner myScanner = new Scanner(System.in);
+    System.out.println("Enter F/C. (F is for Fahreneit, C is for Celsius.) ");
+    
+    String userTemperature = myScanner.nextLine();
+    
+    if (userTemperature=="F"){
+        System.out.println("Enter Fahreneit temperature.")
+        
+        int Fahreneith_temperature = myScaner.nextint();
+        
+        
+    }
+    
+    
+    System.out.println("");
+    
