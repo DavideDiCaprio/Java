@@ -16,22 +16,22 @@ class TemperatureConverter {
     public static void main(String[] args) {
         
     Scanner myScanner = new Scanner(System.in);
-    System.out.println("Enter F/C. (F is for Fahreneit, C is for Celsius.) ");
-    String userTemperature = myScanner.nextLine();
+    System.out.println("Enter F/C. (Enter F is for Fahreneit, C is for Celsius.) ");
+    String startingTemperature = myScanner.nextLine();
     
-    if (userTemperature=="F"){
+    if (startingTemperature.equals("F")){
         System.out.println("Enter Fahreneit temperature...");
-        float Fahreneith = myScanner.nextFloat();
+        float Fahreneith_value = myScanner.nextFloat();
 
-        float Celsius = ((Fahreneith-32)*5)/9;
-        System.out.println("Your temperature is" + Celsius +  "celsius."); 
+        float Celsius_value = ((Fahreneith_value-32)*5)/9;
+        System.out.println("Your temperature is " + Celsius_value +  " celsius."); 
     }
     
-    else if (userTemperature=="C"){
+    else if (startingTemperature.equals("C")){
         System.out.println("Enter Celsius temperature...");
-        float Celsius = myScanner.nextFloat();
-        float Fahreneit = ((Celsius*9)/5)+32;
-        System.out.println("Your temperature is" + Fahreneit +  "fahreneit.");
+        float Celsius_value = myScanner.nextFloat();
+        float Fahreneit_value = ((Celsius_value*9)/5)+32;
+        System.out.println("Your temperature is " + Fahreneit_value +  " fahreneit.");
     }
     
     else {System.out.println("Uncorrect input.");}
