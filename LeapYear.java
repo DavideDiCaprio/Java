@@ -5,7 +5,6 @@
    Remember that a year is leap if it is a multiple of 4 and not a multiple of
    100, or if it is a multiple of 400. */
 
-
 import java.util.Scanner;
 
 class LeapYear {
@@ -16,16 +15,14 @@ class LeapYear {
       
       int year = myScanner.nextInt();
       
-      if (year%4==0 && year%100!=0 && year%400!=0) {
-         System.out.println(year + " " + "is leap");}
-    
-      else if (year%4==0 && year%100== 0 && year%400 !=0){
-         System.out.println(year + " "  + "no leap, only century.");}
-        
-      else if (year%4==0 && year%100==0 && year%400==0){
-         System.out.println(year + " " + "leap and century.");}
-            
+      if (year%4==0 && year%100!=0) {
+         System.out.println(year + " " + "is leap.");
+      }
+      
+      else if (year%400== 0){
+         System.out.println(year + " "  + "is leap.");
+      }
+
       else {System.out.println(year + " " + "not leap.");}
-            
     }
   }
