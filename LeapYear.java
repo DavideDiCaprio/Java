@@ -17,15 +17,15 @@ class LeapYear {
       int year = myScanner.nextInt();
       
       if (year%4==0 && year%100!=0 && year%400!=0) {
-          System.out.println(year + " " + "is leap");}
+         System.out.println(year + " " + "is leap");}
     
-        else if (year%4==0 && year%100== 0 && year%400 !=0){
-            System.out.println(year + " "  + "no leap, only century.");}
+      else if (year%4==0 && year%100== 0 && year%400 !=0){
+         System.out.println(year + " "  + "no leap, only century.");}
         
-        else if (year%4==0 && year%100==0 && year%400==0){
-            System.out.println(year + " " + "leap and century.");}
+      else if (year%4==0 && year%100==0 && year%400==0){
+         System.out.println(year + " " + "leap and century.");}
             
-        else {System.out.println(year + " " + "not leap.");}
+      else {System.out.println(year + " " + "not leap.");}
             
     }
   }
