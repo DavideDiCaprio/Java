@@ -24,11 +24,12 @@ class TriangularPattern {
   public static void main(String[] args) {
 
     Scanner myScanner = new Scanner(System.in);
-    System.out.println("enter:");
+    System.out.println("enter: ");
     int n = myScanner.nextInt();
+    String str = "*";
     
     for (int i = 0; i <= n; i++) {
-      System.out.println("*");
+       System.out.println(str.repeat(i));
     }  
   }
 }
