@@ -18,3 +18,17 @@
 
 */
    
+import java.util.Scanner;
+
+class TriangularPattern {
+  public static void main(String[] args) {
+
+    Scanner myScanner = new Scanner(System.in);
+    System.out.println("enter:");
+    int n = myScanner.nextInt();
+    
+    for (int i = 0; i <= n; i++) {
+      System.out.println("*");
+    }  
+  }
+}
