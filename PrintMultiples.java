@@ -10,7 +10,7 @@
    limit = 30, divisor = 7.
    output: 14, 21, 28
  */
-
+   
 import java.util.Scanner;
 
 class PrintMultiples {
@@ -23,7 +23,7 @@ class PrintMultiples {
     System.out.println("Enter divisor:");
     int divisor = myScanner.nextInt();
     
-    for(int i=divisor; i<=limit; i = i+divisor) {
+    for(int i=(divisor*2); i<=limit; i++) {
         
         if (i%divisor == 0)
         System.out.println(i);
