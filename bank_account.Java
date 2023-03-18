@@ -9,8 +9,6 @@ public class BankAccount {
     String owner_id;
     int balance;
     
-    System.out.println("Classe creation test.");
-    
     public void print_balance(){
         System.out.println("Current balance is: " + this.balance);}
         
