@@ -4,7 +4,7 @@ public class BankAccount {
     
     Scanner myScanner = new Scanner(System.in);
  
-    public Main(int balance) {
+    public BankAccount(int balance) {
     int balance = balance;
     }
     
