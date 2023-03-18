@@ -29,8 +29,6 @@ public class BankAccount {
         float amount = myScanner.nextFloat();
         this.balance += amount;}
         
-    public static void main(String[] args) {
-        BankAccount();}
     }
     
    
