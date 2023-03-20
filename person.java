@@ -1,6 +1,5 @@
 // a simple class in Java //
 
-//define Main class//
 class Main {  
   public static void main(String args[]) { 
 
@@ -14,20 +13,16 @@ class Main {
 }
 
 
-//define costructor //
-
 public class Person {
 
-  String full_name;
-  int birth_year;
-  double height;
-
-  Person(String full_name,int birth_year,double height){
+  public Person(String full_name,int birth_year,double height){
+    
+    String full_name;
+    int birth_year;
+    double height;
 
     this.full_name = full_name;
     this.birth_year = birth_year;
     this.height = height;
-    
   }
-  
 }
