@@ -1,16 +1,17 @@
 public class BankAccount {
   
+  private double balance;
+
   public BankAccount(double balance){
-    double balance;
     this.balance = balance;  
   }
 
-  void show_balance(){
+  public void show_balance(){
     System.out.println(this.balance);
   }
 
-  void withdraw(float amount){
-      
+  public void withdraw(float amount){
+    
     if (amount > this.balance){
       System.out.println("Not enougth money for this operation!");
     }
@@ -19,7 +20,7 @@ public class BankAccount {
     }
   }
   
-  void deposit(float amount){
+  public void deposit(float amount){
         this.balance += amount;
   }
 }
@@ -29,9 +30,9 @@ class Main {
 
     BankAccount my_bank_account = new BankAccount(1000);
     
-    my_bank_account.withdraw(500);
-    my_bank_account.show_balance();
-    my_bank_account.deposit(250);
-    my_bank_account.show_balance();
+    myBankAccount.withdraw(500);
+    myBankAccount.show_balance();
+    myBankAccount.deposit(250);
+    myBankAccount.show_balance();
   } 
 }
