@@ -19,10 +19,11 @@ public class Main {
 
       //////////////////////////////
 
-      ////////////// DROP TABLE ORDERS
+    /*  ////////////// DROP TABLE ORDERS 
+        ////////////// use if you want execute code more then one time. To execute code you need to have a empty table ;)
       String drop_table_instruction = "DROP TABLE ORDERS";
       stmt.executeUpdate(drop_table_instruction);
-      System.out.println("Dropped table ORDERS in the database..."); 
+      System.out.println("Dropped table ORDERS in the database..."); */ 
       
       ////////////// CREATE TABLE ORDERS
       String create_table_instruction = "CREATE TABLE IF NOT EXISTS ORDERS" +
