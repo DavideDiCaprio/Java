@@ -5,7 +5,7 @@ import java.sql.ResultSet;
 
 public class Main {
  
-  static final String DB_CONNECTION_URL = "jdbc:postgresql://ep-spring-cake-583414.us-east-2.aws.neon.tech/neondb?user=neon&password=JVvasjZK6ox7";
+  static final String DB_CONNECTION_URL = "*";
 
   public static void main(String args[]) {
     Connection c = null;
@@ -42,7 +42,7 @@ public class Main {
       System.out.println("Added row in the database...");
       ////////////// ADDED ROW SUCCESSFULLY
       
-      ////////////// ADD ROW TO THE TABLE POLLI
+      ////////////// ADD ROW TO THE TABLE ORDERS
       System.out.println("Inserting records into the table...");
       sql_add_row = "INSERT INTO ORDERS VALUES (DEFAULT,'Giuseppe', 12)";
       stmt.executeUpdate(sql_add_row);
