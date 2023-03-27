@@ -5,7 +5,7 @@ import java.sql.ResultSet;
 
 public class Main {
  
-  static final String DB_CONNECTION_URL = "jdbc:postgresql://ep-spring-cake-583414.us-east-2.aws.neon.tech/neondb?user=neon&password=JVvasjZK6ox7";
+  static final String DB_CONNECTION_URL = "*";
 
   public static void main(String args[]) {
     Connection c = null;
@@ -19,10 +19,11 @@ public class Main {
 
       //////////////////////////////
 
-      ////////////// DROP TABLE ORDERS
+    /*  ////////////// DROP TABLE ORDERS 
+        ////////////// use if you want execute code more then one time. To execute code you need to have a empty table ;)
       String drop_table_instruction = "DROP TABLE ORDERS";
       stmt.executeUpdate(drop_table_instruction);
-      System.out.println("Dropped table ORDERS in the database..."); 
+      System.out.println("Dropped table ORDERS in the database..."); */ 
       
       ////////////// CREATE TABLE ORDERS
       String create_table_instruction = "CREATE TABLE IF NOT EXISTS ORDERS" +
@@ -42,7 +43,7 @@ public class Main {
       System.out.println("Added row in the database...");
       ////////////// ADDED ROW SUCCESSFULLY
       
-      ////////////// ADD ROW TO THE TABLE POLLI
+      ////////////// ADD ROW TO THE TABLE ORDERS
       System.out.println("Inserting records into the table...");
       sql_add_row = "INSERT INTO ORDERS VALUES (DEFAULT,'Giuseppe', 12)";
       stmt.executeUpdate(sql_add_row);
@@ -102,4 +103,4 @@ public class Main {
   }
 }
 
-
+///////////////
